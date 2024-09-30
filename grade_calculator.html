@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Grade Calculator</title>
+</head>
+<body>
+    <script>
+        let percentage = parseFloat(prompt("Please enter your percentage:"));
+
+        if (percentage >= 90 && percentage <= 100) {
+            console.log("Grade: A");
+        } else if (percentage >= 80 && percentage < 90) {
+            console.log("Grade: B");
+        } else if (percentage >= 70 && percentage < 80) {
+            console.log("Grade: C");
+        } else if (percentage >= 60 && percentage < 70) {
+            console.log("Grade: D");
+        } else if (percentage >= 0 && percentage < 60) {
+            console.log("Grade: E");
+        } else {
+            console.log("Please enter a valid number between 0 and 100.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+
+    <h1>Temperature Conversion Program</h1>
+
+    <script>
+        function temperatureConverter() {
+            let tempValue = parseFloat(prompt("Please enter the temperature value:"));
+            let tempUnit = prompt("Enter the unit of temperature (C for Celsius, F for Fahrenheit):");
+
+            if (tempUnit.toLowerCase() === 'c') {
+                let fahrenheit = (tempValue * 9/5) + 32;
+                console.log(`${tempValue.toFixed(1)}°C is equal to ${fahrenheit.toFixed(1)}°F`);
+            } else if (tempUnit.toLowerCase() === 'f') {
+                let celsius = (tempValue - 32) * 5/9;
+                console.log(`${tempValue.toFixed(1)}°F is equal to ${celsius.toFixed(1)}°C`);
+            } else {
+                console.log("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.");
+            }
+        }
+
+        temperatureConverter();
+    </script>
+
+</body>
+</html>
